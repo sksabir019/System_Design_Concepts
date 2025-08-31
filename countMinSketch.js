@@ -1,5 +1,5 @@
 /**
- * Counting Sketch: A probabilistic data structure for estimating the frequency of events in a data stream.
+ * CountMin Sketch: A probabilistic data structure for estimating the frequency of events in a data stream.
  * It uses multiple hash functions to map events to counters, allowing for efficient and approximate frequency queries.
  * This implementation supports insertion and query operations with tunable accuracy and memory usage.
  * The data structure is particularly useful in scenarios where memory is limited and exact counts are not necessary.
