@@ -56,38 +56,37 @@ console.log(user.getDetails());
 console.log(admin.getDetails());
 
 // another example
-class Database {
-  static instance = null;
-
-  constructor() {
-    if (Database.instance) {
-      return Database.instance;
-    }
-    this.connection = null; // Simulate a database connection
-    Database.instance = this;
+class Product {
+  constructor(id, name, price) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
   }
 
-  connect() {
-    if (!this.connection) {
-      this.connection = "Database Connection Established";
-    }
-    return this.connection;
+  getInfo() {
+    return `Product ID: ${this.id}, Name: ${this.name}, Price: $${this.price}`;
+  }
+}
+
+class Order {
+  constructor(orderId, product, quantity) {
+    this.orderId = orderId;
+    this.product = product; // Product is a direct collaborator
+    this.quantity = quantity;
+  }
+
+  getOrderDetails() {
+    return `Order ID: ${this.orderId}, ${this.product.getInfo()}, Quantity: ${this.quantity}`;
   }
 }
 
 // Usage
-const db1 = new Database();
-console.log(db1.connect());
+const product = new Product(1, "Laptop", 999.99);
+const order = new Order(101, product, 2);
 
-const db2 = new Database();
-console.log(db2.connect());
+console.log(order.getOrderDetails());
 
-console.log(db1 === db2); // true, both are the same instance
-
-/**
- * In this example, the User and Admin classes demonstrate code reuse through inheritance, 
- * adhering to the DRY principle by avoiding code duplication in the getDetails method.
- * 
- * The Database class implements the Singleton pattern to ensure that only one instance 
- * of the database connection exists, preventing redundant connections and adhering to the DRY principle.
- */
+// In these examples, the DRY principle is applied by avoiding code duplication 
+// through inheritance and composition.
+// The User and Admin classes share common functionality, and the Product class is reused 
+// in the Order class without duplicating its logic. 
