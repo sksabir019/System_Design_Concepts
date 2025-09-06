@@ -1,4 +1,17 @@
-// Solid Principles in JavaScript
+/**
+ * Solid Principles:
+ * S - Single Responsibility Principle (SRP)
+ * O - Open/Closed Principle (OCP)
+ * L - Liskov Substitution Principle (LSP)
+ * I - Interface Segregation Principle (ISP)
+ * D - Dependency Inversion Principle (DIP)
+ * 
+ * Benefits:
+ * - Improved code maintainability and readability.
+ * - Easier to understand and manage complex systems.
+ * - Enhanced flexibility and scalability.
+ * - Reduced risk of bugs and errors.
+ */
 
 /** 1. Abstract Base Class (LSP + DIP)
  * LSP: All subclasses must implement render() and save() consistently.
