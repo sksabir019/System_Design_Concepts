@@ -85,6 +85,9 @@ console.log("===========================================");
 
 class DocumentComponent {
   constructor() {
+     // if (this.constructor === DocumentComponent) { 
+    //   throw new Error("Cannot instantiate abstract class DocumentComponent");
+    // }
     if (new.target === DocumentComponent) {
       throw new Error("Cannot instantiate abstract class DocumentComponent");
     }

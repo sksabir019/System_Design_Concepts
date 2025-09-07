@@ -8,14 +8,14 @@ There are three main types of design patterns:
 - Structural
 - Behavioral
 
-## 1. Creational Design Patterns
+[**1. Creational Design Patterns**](01_creationalDesignPatterns.js)
 - Singleton Pattern
 - Factory Pattern
 - Abstract Factory Pattern
 - Builder Pattern
 - Prototype Pattern
 
-## 2. Structural Design Patterns
+[**2. Structural Design Patterns**](02_structuralDesignPattern.js)
 - Adapter Pattern
 - Composite Pattern
 - Proxy Pattern
@@ -24,7 +24,7 @@ There are three main types of design patterns:
 - Facade Pattern
 - Flyweight Pattern
 
-## 3. Behavioral Design Patterns
+[**3. Behavioral Design Patterns**](03_behavioralDesignPattern.js)
 - Observer Pattern
 - Strategy Pattern
 - Command Pattern
