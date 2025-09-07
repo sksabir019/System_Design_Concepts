@@ -1,11 +1,16 @@
 /**
  * Solid Principles:
  * S - Single Responsibility Principle (SRP)
+ *    :A class should have one and only one reason to change.
  * O - Open/Closed Principle (OCP)
+ *    :Software entities should be open for extension but closed for modification.
  * L - Liskov Substitution Principle (LSP)
+ *    :Subtypes must be substitutable for their base types without altering the correctness of the program.
  * I - Interface Segregation Principle (ISP)
+ *    :Clients should not be forced to depend on interfaces they do not use.
  * D - Dependency Inversion Principle (DIP)
- * 
+ *    :High-level modules should not depend on low-level modules. Both should depend on abstractions.
+ *
  * Benefits:
  * - Improved code maintainability and readability.
  * - Easier to understand and manage complex systems.
